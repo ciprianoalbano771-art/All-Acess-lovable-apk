@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Age Verification — AllAccess Fans</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#d42a2a">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3212780128899470');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3212780128899470&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+  <div class="age-gate">
+    <div class="age-card">
+
+      <!-- Logo -->
+      <div class="age-logo">
+        <svg width="56" height="56" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="24" fill="#d42a2a"/>
+          <rect x="16" y="22" width="16" height="12" rx="2" fill="none" stroke="#fff" stroke-width="2.2"/>
+          <path d="M19 22v-4a5 5 0 0 1 10 0v4" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="28.5" r="1.5" fill="#fff"/>
+        </svg>
+        <span class="age-logo-text">all access</span>
+      </div>
+
+      <!-- Content -->
+      <h1 class="age-title">Age Verification</h1>
+      <p class="age-desc">This website contains age-restricted content. By entering, you confirm that you are at least <strong>18 years old</strong>.</p>
+
+      <div class="age-warning">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span>You must be 18+ to access this site</span>
+      </div>
+
+      <!-- Buttons -->
+      <button class="age-btn age-enter" onclick="verifyAge()">I am 18 or older — Enter</button>
+      <button class="age-btn age-leave" onclick="window.location.href='https://google.com'">I am under 18 — Leave</button>
+
+      <p class="age-legal">By entering this site, you agree to our Terms of Service and confirm you are of legal age in your jurisdiction.</p>
+    </div>
+  </div>
+
+  <script>
+    // If already verified, skip to main site
+    if (localStorage.getItem('ageVerified') === 'true') {
+      window.location.replace('index.html');
+    }
+
+    function verifyAge() {
+      localStorage.setItem('ageVerified', 'true');
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
