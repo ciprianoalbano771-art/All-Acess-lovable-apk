@@ -321,8 +321,8 @@ SUBSCRIBE TO GET YOUR DICK THROBBING HARD.🔞😈</p>
         </div>
       </article>
 
-      <!-- Free Video Post 2 -->
-      <article class="post locked" data-type="videos">
+      <!-- Locked Video Post 2 -->
+      <article class="post locked" data-type="videos" data-tier="premium">
         <div class="post-head">
           <img src="images/fotoperfil%20principal.jpg" alt="" class="post-avi">
           <div>
@@ -331,8 +331,14 @@ SUBSCRIBE TO GET YOUR DICK THROBBING HARD.🔞😈</p>
           </div>
         </div>
         <p class="post-body">content I’ve got for you 😉</p>
-        <div class="post-media">
-          <video src="videos/video2.mp4" controls playsinline preload="metadata" class="post-video"></video>
+        <div class="post-media post-locked">
+          <div class="lock-wall">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <p>Subscribe to unlock</p>
+            <button class="btn-lock-sub" onclick="scrollToSubscribe()">SUBSCRIBE</button>
+            <button class="btn-lock-ppv" onclick="openPPV(this, 3000)">Unlock for ₦3,000</button>
+          </div>
+          <img src="images/foto10.webp" alt="" class="post-img blurred">
         </div>
         <div class="post-bar">
           <button class="action-btn" onclick="toggleLike(this)">
@@ -414,9 +420,9 @@ SUBSCRIBE TO GET YOUR DICK THROBBING HARD.🔞😈</p>
       <div class="modal-content">
         <div class="transfer-box">
           <p class="transfer-label">Transfer to:</p>
-          <div class="transfer-detail"><span>Bank</span><strong>Paystack-Titan</strong></div>
-          <div class="transfer-detail"><span>Account</span><strong class="copyable" onclick="copyAccount(this)">0123456789</strong></div>
-          <div class="transfer-detail"><span>Name</span><strong>AllAccess/AsiyamiGold</strong></div>
+          <div class="transfer-detail"><span>Bank</span><strong>PAGA</strong></div>
+          <div class="transfer-detail"><span>Account</span><strong class="copyable" onclick="copyAccount(this)">2181264978</strong></div>
+          <div class="transfer-detail"><span>Name</span><strong>Yusuf Adekunle</strong></div>
           <div class="transfer-detail"><span>Amount</span><strong id="tipTransferAmount">₦2,000</strong></div>
           <p class="transfer-timer">Expires in <strong id="tipTransferTimer">30:00</strong></p>
         </div>
